@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class NumberWizards : MonoBehaviour {
-	// Use this for initialization
+
+	public Text guessText;
+	
 	int max;
 	int min;
 	int guess;
@@ -17,6 +20,7 @@ public class NumberWizards : MonoBehaviour {
 		guess = 500;
 		
 		max = max + 1;
+		guessText.text = guess.ToString();
 		
 		print ("========================");
 		print ("Welcome to Number Wizard");
@@ -59,5 +63,6 @@ public class NumberWizards : MonoBehaviour {
 		guess = (max + min) / 2;
 		print ("Higher or lower than " + guess);
 		print ("Up = higher, down = lower, return = equal");
+		guessText.text = guess.ToString();
 	}
 }
