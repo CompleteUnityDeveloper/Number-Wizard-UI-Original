@@ -84,11 +84,9 @@ After watching this video you will be able to...
 
 ### NW UI Unity 5 & Web GL Sharing (Optional) ###
 
-****
 + Upgrade to Unity 5.
 + About Web GL builds.
 + Build for Web GL and share.
-****
 
 ### DOWNLOAD Section 4 Unity Project ###
 
