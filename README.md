@@ -97,6 +97,3 @@ After watching this video you will be able to...
 In this video, we talk a little more about the structure of the course and how
 you should approach the challenges. We also show you how you can send us
 feedback on the course and how to get in touch with us.
-
----
-Find out more about our [Complete Unity Developer Course](https://www.udemy.com/unitycourse?couponCode=GitHubDiscount).
