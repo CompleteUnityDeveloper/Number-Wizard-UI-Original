@@ -3,12 +3,16 @@ using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
+    // configuration parameters
+    [SerializeField] int lowestNumber = 1;
+    [SerializeField] int highestNumber = 10000;
+
     // references
     NumberWizard numberWizard;
 
     private void Start()
     {
-        numberWizard = new NumberWizard(1, 1000); // todo parameter
+        numberWizard = new NumberWizard(lowestNumber, highestNumber);
     }
 
     public void LoadLevel(string name)
@@ -29,7 +33,7 @@ public class Game : MonoBehaviour
 	public void QuitRequest()
     {
 		Debug.Log ("Quit requested");
-		Application.Quit ();
+		Application.Quit();
 	}
 
     public int GetGuess()
