@@ -1,45 +1,33 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
 
-public class NumberWizard : MonoBehaviour {
-
-    // configuration parameters
-	[SerializeField] Text guessText;
-	
+public class NumberWizard
+{
     // state variables
-	int max = 1000;
-	int min = 1;
-	int guess;
-	
-	void Start ()
+    private int min;
+    private int max;
+    private int guess;
+
+    public NumberWizard(int lowestAllowed, int highestAllowed) // constructor
     {
-		StartGame();
-	}
-	
-	void StartGame () {
-		max = max + 1;
-		NextGuess();
-	}
+        min = lowestAllowed;
+        max = highestAllowed + 1; // because of rounding-down
+        guess = max / 2;
+    }
 
-	public void GuessHigher(){
-		min = guess;
-		NextGuess();
-	}
+    public int GetGuess()
+    {
+        return guess;
+    }
 
-	public void GuessLower(){
-		max = guess;
-		NextGuess ();
-	}
+    public void GuessHigher()
+    {
+        min = guess;
+        guess = (max + min) / 2;
+    }
 
-	public void GuessCorrect(){
-		StartGame ();
-	}
-	
-	void NextGuess () {
-		//guess = (max + min) / 2;
-		guess = Random.Range(min, max);
-		print ("Next guess is " + guess);
-		guessText.text = guess.ToString();
-	}
+    public void GuessLower()
+    {
+        max = guess;
+        guess = (max + min) / 2;
+    }
 }

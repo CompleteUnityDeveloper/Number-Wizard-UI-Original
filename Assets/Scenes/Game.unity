@@ -113,47 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &426849130
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 426849132}
-  - component: {fileID: 426849131}
-  m_Layer: 0
-  m_Name: NumberWizard
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &426849131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 426849130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bae0d8fef852e4029bcf349613c0a911, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guessText: {fileID: 1816648172}
---- !u!4 &426849132
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 426849130}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &449728332
 Prefab:
   m_ObjectHideFlags: 0
@@ -443,8 +402,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 426849131}
-        m_MethodName: GuessHigher
+      - m_Target: {fileID: 832747633}
+        m_MethodName: HigherPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -764,8 +723,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 426849131}
-        m_MethodName: GuessLower
+      - m_Target: {fileID: 832747633}
+        m_MethodName: LowerPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -854,7 +813,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4452853669585194, guid: 0797b021388d14065849f8632ff8c544, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0797b021388d14065849f8632ff8c544, type: 2}
@@ -973,6 +932,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114652048861416960, guid: 9b4cb0892803c476d86cf143ff70553b,
+        type: 2}
+      propertyPath: guessText
+      value: 
+      objectReference: {fileID: 1816648172}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4cb0892803c476d86cf143ff70553b, type: 2}
   m_IsPrefabAsset: 0
