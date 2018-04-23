@@ -2,15 +2,18 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class NumberWizards : MonoBehaviour {
+public class NumberWizard : MonoBehaviour {
 
-	public Text guessText;
+    // configuration parameters
+	[SerializeField] Text guessText;
 	
+    // state variables
 	int max = 1000;
 	int min = 1;
 	int guess;
 	
-	void Start () {
+	void Start ()
+    {
 		StartGame();
 	}
 	
