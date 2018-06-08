@@ -25,28 +25,30 @@ public class NumberWizard : MonoBehaviour
         guessText.text = guess.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnPressHigher()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            min = guess;
-            NextGuess();
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            max = guess;
-            NextGuess();
-        }
-        else if (Input.GetKeyDown(KeyCode.Return))
-        {
-            Debug.Log("I am a genius!");
-            StartGame();
-        }
+        min = guess;
+        NextGuess();
     }
+
+    //// Update is called once per frame
+    //void Update()
+    //{
+    //    else if (Input.GetKeyDown(KeyCode.DownArrow))
+    //    {
+    //        max = guess;
+    //        NextGuess();
+    //    }
+    //    else if (Input.GetKeyDown(KeyCode.Return))
+    //    {
+    //        Debug.Log("I am a genius!");
+    //        StartGame();
+    //    }
+    //}
+
     void NextGuess()
     {
         guess = (max + min) / 2;
-        Debug.Log("Is it higher or lower than..." + guess);
+        guessText.text = guess.ToString();
     }
 }

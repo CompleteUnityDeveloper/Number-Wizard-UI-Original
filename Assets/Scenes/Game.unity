@@ -190,8 +190,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: HigherPressed
+      - m_Target: {fileID: 2112819411}
+        m_MethodName: OnPressHigher
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1350,6 +1350,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bae0d8fef852e4029bcf349613c0a911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guessText: {fileID: 869067658}
-  max: 1
-  min: 1000
+  guessText: {fileID: 1816648172}
+  max: 1000
+  min: 1
