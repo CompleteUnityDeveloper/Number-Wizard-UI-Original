@@ -31,20 +31,17 @@ public class NumberWizard : MonoBehaviour
         NextGuess();
     }
 
-    //// Update is called once per frame
-    //void Update()
-    //{
-    //    else if (Input.GetKeyDown(KeyCode.DownArrow))
-    //    {
-    //        max = guess;
-    //        NextGuess();
-    //    }
-    //    else if (Input.GetKeyDown(KeyCode.Return))
-    //    {
-    //        Debug.Log("I am a genius!");
-    //        StartGame();
-    //    }
-    //}
+    public void OnPressLower()
+    {
+        max = guess;
+        NextGuess();
+    }
+
+    public void OnPressCorrect()
+    {
+        // TODO load win screen
+        Debug.Log("I wish I knew how to load a scene!");
+    }
 
     void NextGuess()
     {
