@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NumberWizard : MonoBehaviour
 {
@@ -35,12 +36,6 @@ public class NumberWizard : MonoBehaviour
     {
         max = guess;
         NextGuess();
-    }
-
-    public void OnPressCorrect()
-    {
-        // TODO load win screen
-        Debug.Log("I wish I knew how to load a scene!");
     }
 
     void NextGuess()

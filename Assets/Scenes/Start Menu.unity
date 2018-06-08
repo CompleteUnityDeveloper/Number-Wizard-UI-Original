@@ -120,40 +120,40 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4875878602679696, guid: 9b4cb0892803c476d86cf143ff70553b, type: 2}
+    - target: {fileID: 4747986384390390, guid: a85b37d0f83324292bf8af90772130c5, type: 2}
       propertyPath: m_LocalPosition.x
       value: 398.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4875878602679696, guid: 9b4cb0892803c476d86cf143ff70553b, type: 2}
+    - target: {fileID: 4747986384390390, guid: a85b37d0f83324292bf8af90772130c5, type: 2}
       propertyPath: m_LocalPosition.y
       value: 179
       objectReference: {fileID: 0}
-    - target: {fileID: 4875878602679696, guid: 9b4cb0892803c476d86cf143ff70553b, type: 2}
+    - target: {fileID: 4747986384390390, guid: a85b37d0f83324292bf8af90772130c5, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4875878602679696, guid: 9b4cb0892803c476d86cf143ff70553b, type: 2}
+    - target: {fileID: 4747986384390390, guid: a85b37d0f83324292bf8af90772130c5, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4875878602679696, guid: 9b4cb0892803c476d86cf143ff70553b, type: 2}
+    - target: {fileID: 4747986384390390, guid: a85b37d0f83324292bf8af90772130c5, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4875878602679696, guid: 9b4cb0892803c476d86cf143ff70553b, type: 2}
+    - target: {fileID: 4747986384390390, guid: a85b37d0f83324292bf8af90772130c5, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4875878602679696, guid: 9b4cb0892803c476d86cf143ff70553b, type: 2}
+    - target: {fileID: 4747986384390390, guid: a85b37d0f83324292bf8af90772130c5, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4875878602679696, guid: 9b4cb0892803c476d86cf143ff70553b, type: 2}
+    - target: {fileID: 4747986384390390, guid: a85b37d0f83324292bf8af90772130c5, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9b4cb0892803c476d86cf143ff70553b, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: a85b37d0f83324292bf8af90772130c5, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &213498716
 Prefab:
@@ -197,12 +197,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0797b021388d14065849f8632ff8c544, type: 2}
   m_IsPrefabAsset: 0
---- !u!114 &523039731 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114652048861416960, guid: 9b4cb0892803c476d86cf143ff70553b,
-    type: 2}
-  m_PrefabInternal: {fileID: 135543233}
-  m_Script: {fileID: 11500000, guid: 914b8a75977ed47209fdf798a93ddac3, type: 3}
 --- !u!1 &720264909
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,9 +498,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 523039731}
-        m_MethodName: LoadLevel
-        m_Mode: 5
+      - m_Target: {fileID: 1784517229}
+        m_MethodName: LoadNextScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -656,7 +650,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4021791492654002, guid: f09348500e0c5449ca314e414b22715e, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f09348500e0c5449ca314e414b22715e, type: 2}
@@ -812,7 +806,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 523039731}
+      - m_Target: {fileID: 0}
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -859,3 +853,9 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1623363838}
   m_CullTransparentMesh: 0
+--- !u!114 &1784517229 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114829758692869876, guid: a85b37d0f83324292bf8af90772130c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 135543233}
+  m_Script: {fileID: 11500000, guid: 2099b038a13834921bb029c5bcf127b0, type: 3}
