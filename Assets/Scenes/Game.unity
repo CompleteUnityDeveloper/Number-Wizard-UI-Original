@@ -190,7 +190,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 832747633}
+      - m_Target: {fileID: 0}
         m_MethodName: HigherPressed
         m_Mode: 1
         m_Arguments:
@@ -593,12 +593,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &832747633 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114652048861416960, guid: 9b4cb0892803c476d86cf143ff70553b,
-    type: 2}
-  m_PrefabInternal: {fileID: 2008104335}
-  m_Script: {fileID: 11500000, guid: 914b8a75977ed47209fdf798a93ddac3, type: 3}
 --- !u!1 &869067657
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,7 +888,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 832747633}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadLevel
         m_Mode: 5
         m_Arguments:
@@ -1029,7 +1023,6 @@ GameObject:
   - component: {fileID: 1816648171}
   - component: {fileID: 1816648173}
   - component: {fileID: 1816648172}
-  - component: {fileID: 1816648174}
   m_Layer: 5
   m_Name: Guess
   m_TagString: Untagged
@@ -1095,17 +1088,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1816648170}
   m_CullTransparentMesh: 0
---- !u!114 &1816648174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1816648170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cd82f9e2cea2474a92589e0dcee4d28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1968804106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,7 +1164,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 832747633}
+      - m_Target: {fileID: 0}
         m_MethodName: LowerPressed
         m_Mode: 1
         m_Arguments:
@@ -1348,6 +1330,26 @@ Prefab:
       propertyPath: guessText
       value: 
       objectReference: {fileID: 1816648172}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114652048861416960, guid: 9b4cb0892803c476d86cf143ff70553b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 9b4cb0892803c476d86cf143ff70553b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &2112819409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1345822010419944, guid: 9b4cb0892803c476d86cf143ff70553b,
+    type: 2}
+  m_PrefabInternal: {fileID: 2008104335}
+--- !u!114 &2112819411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2112819409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bae0d8fef852e4029bcf349613c0a911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guessText: {fileID: 869067658}
+  max: 1
+  min: 1000
